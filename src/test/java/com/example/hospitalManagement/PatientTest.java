@@ -24,8 +24,11 @@ public class PatientTest {
 
     @Test
     public void testPatientRepository(){
-        List<Patient> patientList = patientRepository.findAll();
+//        List<Patient> patientList = patientRepository.findAll();
+        List<Patient> patientList = patientRepository.findAllPatientWithAppointment();
         System.out.println(patientList);
+
+
     }
 
     @Test
@@ -52,10 +55,10 @@ public class PatientTest {
 //        }
 
 //                List<Patient> patientList = patientRepository.findAllPatients();
-                Page<Patient> patientList = patientRepository.findAllPatients(PageRequest.of(0,2));
-        for (Patient patient:patientList){
-            System.out.println(patient);
-        }
+//                Page<Patient> patientList = patientRepository.findAllPatients(PageRequest.of(0,2));
+//        for (Patient patient:patientList){
+//            System.out.println(patient);
+//        }
 
 //                int rowsUpdated = patientRepository.updateNameWithId("Arav Sharma", 1L);
 //                System.out.println(rowsUpdated);
