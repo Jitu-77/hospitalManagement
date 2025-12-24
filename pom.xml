@@ -53,6 +53,15 @@
 			<scope>provided</scope>
 		</dependency>
 
+		<!-- Model Wrapper -->
+		<dependency>
+			<groupId>org.modelmapper</groupId>
+			<artifactId>modelmapper</artifactId>
+			<version>3.2.4</version>
+		</dependency>
+		<!-- Model Wrapper -->
+
+
 		<!-- Testing (JUnit 5) -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
