@@ -71,5 +71,7 @@ public class Patient {
     //orphanRemoval = true --- child cannot exist without Parent
 //    @ToString.Exclude
     @OneToMany(mappedBy = "patient",cascade = {CascadeType.REMOVE},orphanRemoval = true,fetch = FetchType.EAGER)
+    // we need to provide mappedBy as we donot want to have another join table here but for JPA to know
+    // thtere is a relationship and it will automatically create patient.getAppointments method
     private List<Appointment> appointments = new ArrayList<>();
 }

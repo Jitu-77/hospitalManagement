@@ -24,7 +24,7 @@ public class Appointment {
     private String reason;
 
 //    Appointment to Patient is many to one
-//    Appointment cannot be there without Patient
+//    Appointment cannot be there without Patient so here App is owner
 //    Patient to Appointment --many to one
     //same concept for doctor
 
